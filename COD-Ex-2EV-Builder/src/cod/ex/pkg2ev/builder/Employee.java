@@ -45,10 +45,32 @@ public class Employee {
       this.hireDate = newHireDate;
    }
 
-    Employee(String lastName, String middleName, int birthYear, int birthMonth, int birthDate, int hireYear, int hireMonth, int hireDate) {
+    public Employee(final String firstName,  final long id) {
+        this.firstName = firstName;
+        this.id = id;
+    }
+
+    public Employee(String lastName, String middleName, int birthYear, int birthMonth, int birthDate, int hireYear, int hireMonth, int hireDate) {
+        this.lastName = lastName;
+        this.middleName = middleName;
+        this.birthYear = birthYear;
+        this.birthMonth = birthMonth;
+        this.birthDate = birthDate;
+        this.hireYear = hireYear;
+        this.hireMonth = hireMonth;
+        this.hireDate = hireDate;
+    }
+    
+
+    @Override
+    public String toString() {
+        return "Employee{" + "lastName=" + lastName + ", middleName=" + middleName + ", firstName=" + firstName + ", id=" + id + ", birthYear=" + birthYear + ", birthMonth=" + birthMonth + ", birthDate=" + birthDate + ", hireYear=" + hireYear + ", hireMonth=" + hireMonth + ", hireDate=" + hireDate + '}';
+    }
+
+   
         
     }
 
     
-    }
+    
 
